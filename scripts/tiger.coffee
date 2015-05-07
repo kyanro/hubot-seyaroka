@@ -13,11 +13,14 @@ module.exports = (robot) ->
 		responseType = Math.floor(Math.random() * 3 + 1)
 		switch responseType
 			when 1
-				robot.send "せやな"
+				res.send "せやな"
 			when 2
-				robot.send "せやろか"
+				res.send "せやろか"
 			when 3
-				robot.send "わかる"
+				res.send "わかる"
+			else
+				res.send "そやそや"
+
 
 
   # robot.hear /badger/i, (res) ->
